@@ -1,0 +1,144 @@
+.career-path {
+
+  .content-title {
+    margin: 0 0 20px 0;
+  }
+
+  &__left {
+    width: 31.42857142857143%;
+    float: left;
+  }
+
+  &__photo {
+    border-radius: 8px 8px 0 0;
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: $main-photo-width;
+    height: $main-photo-height;
+  }
+
+  &__right {
+    width: 54.28571428571429%;
+    float: right;
+  }
+
+  &__item {
+    font-size: 18px;
+    margin: 0 0 22px 0;
+
+    &:hover .career-path__block {
+      background: $blue;
+    }
+
+    &:hover .career-path__title,
+    &:hover .career-path__work,
+    &:hover .career-path__date {
+      color: $white;
+    }
+
+    &:first-child .career-path__block:before {
+      display: none;
+    }
+
+    &:last-child .career-path__block:after {
+      display: none;
+    }
+
+    &:hover .career-path__year {
+      color: $blue;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 28px;
+    }
+
+    &:hover .career-path__year:after {
+      border-color: #94e0f2;
+    }
+  }
+
+  &__block {
+    width: 380px;
+    display: inline-block;
+    position: relative;
+    background: $white;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    line-height: 26px;
+    padding: 14px 20px 12px 20px;
+
+    &:after,
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 1px;
+      background: #dddddd;
+      left: -22px;
+    }
+
+    &:before {
+      top: 0;
+      bottom: 50%;
+    }
+
+    &:after {
+      bottom: -22px;
+      top: 50%;
+    }
+  }
+
+  &__wrapper {
+    overflow: hidden;
+  }
+
+  &__title {
+    font-size: 21px;
+    line-height: 26px;
+    color: #5a5a5a;
+    margin-bottom: 2px;
+  }
+
+  &__work,
+  &__date {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  &__year {
+    position: absolute;
+    right: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    top: 44%;
+    margin-top: -8px;
+    margin-right: 34px;
+    color: $light-grey;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      background: $blue;
+      border: 5px solid $dirty-white;
+      position: absolute;
+      right: -24px;
+      top: 48%;
+      z-index: 1;
+      margin-top: -10px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+    }
+  }
+}

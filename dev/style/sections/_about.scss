@@ -1,0 +1,73 @@
+.about {
+
+  &__left {
+    float: left;
+    width: 42.85714285714286%;
+    text-align: center;
+  }
+
+  &__photo {
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 3px solid #ffffff;
+    overflow: hidden;
+
+    &-img {
+      display: block;
+      width: $main-photo-width;
+      height: $main-photo-height;
+    }
+  }
+
+  &__right {
+    float: right;
+    width: 54.285714285714294%;
+  }
+
+  &__text {
+    height: 300px;
+    overflow: auto;
+    margin: 0 0 45px 0;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 0 10px 0 0;
+
+    p {
+      margin: 0 0 5px 0;
+    }
+  }
+
+  &__download {
+    text-align: right;
+    margin: 0 0 45px 0;
+
+    &-link {
+      display: inline-block;
+      text-decoration: none;
+      font-family: OpenSans;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 28px;
+      color: $red;
+      padding: 5px 15px;
+      border: 2px solid $red;
+      -webkit-border-radius: 40px;
+      -moz-border-radius: 40px;
+      border-radius: 40px;
+      -webkit-transition: color 0.8s;
+      transition: color 0.8s;
+
+      &:hover {
+        color: $white;
+        background: $red;
+      }
+
+      &-icon {
+        margin: 0 5px 0 0;
+      }
+    }
+  }
+}

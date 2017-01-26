@@ -1,0 +1,130 @@
+@media screen and (max-width: 992px) {
+
+  .container {
+    width: 728px;
+    margin: 0 auto;
+  }
+
+  .index-container {
+    width: 354px;
+
+    &__top {
+      padding: 65px 60px 16px;
+    }
+
+    &__photo {
+      left: 122px;
+      top: -52px;
+
+      &__img {
+        width: 104px;
+        height: 104px;
+      }
+    }
+
+    &__bottom {
+      padding: 18px 15px 14px;
+    }
+
+    &__link {
+      padding: 4px 14px;
+    }
+  }
+
+  .header {
+    margin: 0 0 25px 0;
+  }
+
+  .sidebar {
+    float: none;
+    width: 100%;
+    margin: 0 0 38px 0;
+  }
+
+  .nav {
+
+    &__list {
+      text-align: left;
+    }
+
+    &__item {
+      display: inline-block;
+
+      &_active {
+
+        .nav__link {
+          border: 0 none;
+        }
+      }
+    }
+
+    &__link {
+      margin: 0 23px 0 0;
+      padding: 0;
+      border: 0 none;
+    }
+  }
+
+  .main {
+    width: 100%;
+    float: none;
+  }
+
+  .about {
+    width: 95.74175824175824%;
+
+    &__left {
+      width: 32.7116212338594%;
+    }
+
+    &__right {
+      width: 64.41893830703013%;
+    }
+
+    &__photo-img {
+        width: 170px;
+        height: 170px;
+    }
+
+    &__text {
+      height: 375px;
+    }
+
+    &__download {
+      margin: 0 35px 45px 0;
+    }
+  }
+
+  .career-path {
+
+    &__right {
+      width: 48.9010989010989%;
+      float: right;
+    }
+
+    &__block {
+      width: 356px;
+    }
+  }
+
+  .portfolio {
+
+    .content-title {
+      margin: -20px 0 15px 0;
+    }
+
+    &__item {
+      width: 228px;
+    }
+
+    &__photo-img {
+      width: 228px;
+      height: 178px;
+    }
+
+    &__block {
+      padding-bottom: 15px;
+    }
+  }
+}
+
