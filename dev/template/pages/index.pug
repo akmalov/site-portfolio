@@ -1,0 +1,14 @@
+extends ../layout/_general
+block title
+    title Обо мне
+
+block content
+    .wrapper.wrapper_index
+        main.index
+            .index__photo
+                img.index__image(src="img/content/main_photo.jpg" alt="Моё фото" title="Моё фото")
+            .index__desc
+                .index__name Сергей
+                .index__surname Акмалов
+            .index__link-block
+                a.about__download-link.index__link(href="about.html") Перейти на сайт
