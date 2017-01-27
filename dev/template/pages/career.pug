@@ -1,0 +1,43 @@
+extends ../layout/_default-page
+
+block title
+    title Обо мне
+
+block content
+    aside.sidebar
+        nav.nav
+            ul.nav__list
+                li.nav__item
+                    a.nav__link(href="about.html")
+                        i.nav__icon.fa.fa-user-secret
+                        span.nav__text Обо мне
+                li.nav__item.nav__item_active
+                    a.nav__link(href="career.html")
+                        i.nav__icon.fa.fa-rocket
+                        span.nav__text Карьерный путь
+                li.nav__item
+                    a.nav__link(href="portfolio.html")
+                        i.nav__icon.fa.fa-briefcase
+                        span.nav__text Портфолио
+    main.main
+        .career
+            .content-title Карьерный путь
+            .career__left
+                .career__photo
+                    img.career__photo-image(src="img/content/university.jpg" alt="Мой университет")
+            .career__right
+                ul.career__list
+                    li.career__item
+                        .career__block
+                            .career__wrapper
+                                .career__title СПбГБУЗ «Городская поликлиника №60 Пушкинского района»
+                                .career__work Системный администратор
+                                .career__date июль 2012 - апрель 2016
+                                .career__year 2016
+                    li.career__item
+                        .career__block
+                            .career__wrapper
+                                .career__title СПбНИУ информационных технологий, механики и оптики
+                                .career__work Управление и информатика в технических системах
+                                .career__date сентябрь 2009 - июнь 2015
+                                .career__year 2015

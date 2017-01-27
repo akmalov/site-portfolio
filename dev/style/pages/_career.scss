@@ -1,7 +1,7 @@
-.career-path {
+.career {
 
   .content-title {
-    margin: 0 0 20px 0;
+    margin-bottom: 20px;
   }
 
   &__left {
@@ -11,12 +11,10 @@
 
   &__photo {
     border-radius: 8px 8px 0 0;
-    -webkit-border-radius: 8px 8px 0 0;
-    -moz-border-radius: 8px 8px 0 0;
     overflow: hidden;
   }
 
-  &__img {
+  &__image {
     width: $main-photo-width;
     height: $main-photo-height;
   }
@@ -28,34 +26,34 @@
 
   &__item {
     font-size: 18px;
-    margin: 0 0 22px 0;
+    margin-bottom: 22px;
 
-    &:hover .career-path__block {
+    &:hover .career__block {
       background: $blue;
     }
 
-    &:hover .career-path__title,
-    &:hover .career-path__work,
-    &:hover .career-path__date {
+    &:hover .career__title,
+    &:hover .career__work,
+    &:hover .career__date {
       color: $white;
     }
 
-    &:first-child .career-path__block:before {
+    &:first-child .career__block:before {
       display: none;
     }
 
-    &:last-child .career-path__block:after {
+    &:last-child .career__block:after {
       display: none;
     }
 
-    &:hover .career-path__year {
+    &:hover .career__year {
       color: $blue;
       font-size: 18px;
       font-weight: 700;
-      line-height: 28px;
+      line-height: 1.55;
     }
 
-    &:hover .career-path__year:after {
+    &:hover .career__year:after {
       border-color: #94e0f2;
     }
   }
@@ -66,13 +64,9 @@
     position: relative;
     background: $white;
     border-radius: 9px;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     text-align: left;
-    line-height: 26px;
+    line-height: 1.44;
     padding: 14px 20px 12px 20px;
 
     &:after,
@@ -102,7 +96,7 @@
 
   &__title {
     font-size: 21px;
-    line-height: 26px;
+    line-height: 1.24;
     color: #5a5a5a;
     margin-bottom: 2px;
   }
@@ -118,7 +112,7 @@
     right: 100%;
     font-size: 14px;
     font-weight: 300;
-    line-height: 26px;
+    line-height: 1.86;
     top: 44%;
     margin-top: -8px;
     margin-right: 34px;
@@ -137,8 +131,6 @@
       z-index: 1;
       margin-top: -10px;
       border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
     }
   }
 }
