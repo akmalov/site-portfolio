@@ -18,6 +18,30 @@ $main-photo-width: 220px;
 $profile-photo-height: 58px;
 $main-photo-height: 220px;
 
+@mixin desktop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
