@@ -9,18 +9,32 @@
     text-align: right;
   }
 
+  &__item {
+
+    &_active {
+
+      .nav__link {
+        border-right: 6px solid $blue;
+      }
+
+      .nav__icon {
+        color: $blue;
+      }
+
+      .nav__text {
+        color: $blue;
+        font-weight: 700;
+      }
+    }
+  }
+
   &__link {
     display: block;
     color: $dark-grey;
     padding: 10px 25px 10px 0;
     border-right: 6px solid transparent;
     font-size: 18px;
-    line-height: 24px;
-
-    &-icon {
-      display: inline-block;
-      margin: 0 5px 0 0;
-    }
+    line-height: 1.33;
 
     &:hover {
       color: $blue;
@@ -33,22 +47,8 @@
     }
   }
 
-  &__item {
-
-    &_active {
-
-      .nav__link {
-        border-right: 6px solid $blue;
-
-        &-icon {
-          color: $blue;
-        }
-
-        &-text {
-          color: $blue;
-          font-weight: 700;
-        }
-      }
-    }
+  &__icon {
+    display: inline-block;
+    margin-right: 5px;
   }
 }

@@ -1,0 +1,37 @@
+extends ../layout/_default-page
+
+block title
+    title Обо мне
+
+block content
+    aside.sidebar
+        nav.nav
+            ul.nav__list
+                li.nav__item.nav__item_active
+                    a.nav__link(href="about.html")
+                        i.nav__icon.fa.fa-user-secret
+                        span.nav__text Обо мне
+                li.nav__item
+                    a.nav__link(href="career.html")
+                        i.nav__icon.fa.fa-user-rocket
+                        span.nav__text Карьерный путь
+                li.nav__item
+                    a.nav__link(href="portfolio.html")
+                        i.nav__icon.fa.fa-user-briefcase
+                        span.nav__text Портфолио
+    main.main
+        .about
+            .about__left
+                .about__photo
+                    img.about__photo-image(src="img/content/main-photo.jpg" alt="Моё фото")
+            .about__right
+                .content-title Обо мне
+                .about__text
+                    p Меня зовут Сергей. Проживаю в Санкт-Петербурге.
+                    p Примерно год назад стал изучать вэб-разработку.
+                    p Пока область моих знаний распространяется на HTML и CSS, но я не собираюсь на этом останавливаться и планирую изучить JavaScript и PHP.
+                    p Интернет сообщество очень интересно и многогранно, почти каждый день появляется что-то новое и хочется всё это изучить, внедрить и проверить на себе, многое получается, и со временем приносит свои плоды.
+                .download
+                    a.download__link(href="#")
+                        i.download__icon.fa.fa-download
+                        span.download__text Скачать резюме

@@ -1,11 +1,15 @@
+.content {
+  margin-bottom: 45px;
+
+  &-title {
+    font-size: 35px;
+    line-height: 1.29;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+}
+
 .main {
   width: 74.46808510638298%;
   float: right;
-}
-
-.content-title {
-  font-size: 35px;
-  line-height: 45px;
-  font-weight: 500;
-  margin: 0 0 13px 0;
 }

@@ -1,0 +1,50 @@
+.social-buttons {
+
+  padding-top: 10px;
+
+  &__list {
+    display: inline-block;
+    font-size: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-right: 8px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    background-image: url("../img/icons/social-buttons.png");
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 30px;
+
+    &_fb {
+      background-position: -50px -50px;
+
+      &:hover {
+        background-position: -181px -50px;
+      }
+    }
+
+    &_vk {
+      background-position: -574px -50px;
+
+      &:hover {
+        background-position: -706px -50px;
+      }
+    }
+
+    &_tw {
+      background-position: -312px -50px;
+
+      &:hover {
+        background-position: -443px -50px;
+      }
+    }
+  }
+}
