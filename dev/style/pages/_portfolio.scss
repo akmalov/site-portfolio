@@ -2,6 +2,10 @@
 
     .content-title {
       margin-bottom: 16px;
+
+      @include laptop {
+        margin: -20px 0 15px 0;
+      }
     }
 
     &__list {
@@ -17,15 +21,19 @@
     overflow: hidden;
     margin: 0 0 18px 15px;
 
-      &:hover {
+    @include laptop {
+      width: 228px;
+    }
 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: box-shadow 0.3s;
+    &:hover {
 
-        .portfolio__block-title {
-          color: $red;
-        }
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s;
+
+      .portfolio__block-title {
+        color: $red;
       }
+    }
   }
 
   &__link {
@@ -37,12 +45,21 @@
     display: block;
     width: 220px;
     height: 172px;
+
+    @include laptop {
+      width: 228px;
+      height: 178px;
+    }
   }
 
   &__block {
     background: $white;
     padding: 18px 18px 12px;
     overflow: hidden;
+
+    @include laptop {
+      padding-bottom: 15px;
+    }
 
     &-wrapper {
       overflow: hidden;

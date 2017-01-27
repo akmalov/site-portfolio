@@ -1,20 +1,38 @@
 .sidebar {
   width: 23.40425531914894%;
   float: left;
+
+  @include laptop {
+    float: none;
+    width: 100%;
+    margin: 0 0 38px 0;
+  }
 }
 
 .nav {
 
   &__list {
     text-align: right;
+
+    @include laptop {
+      text-align: left;
+    }
   }
 
   &__item {
+
+    @include laptop {
+      display: inline-block;
+    }
 
     &_active {
 
       .nav__link {
         border-right: 6px solid $blue;
+
+        @include laptop {
+          border: 0 none;
+        }
       }
 
       .nav__icon {
@@ -35,6 +53,12 @@
     border-right: 6px solid transparent;
     font-size: 18px;
     line-height: 1.33;
+
+    @include laptop {
+      margin-right: 23px;
+      padding: 0;
+      border: 0 none;
+    }
 
     &:hover {
       color: $blue;

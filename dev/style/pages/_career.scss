@@ -22,6 +22,11 @@
   &__right {
     width: 54.28571428571429%;
     float: right;
+
+    @include laptop {
+      width: 48.9010989010989%;
+      float: right;
+    }
   }
 
   &__item {
@@ -68,6 +73,10 @@
     text-align: left;
     line-height: 1.44;
     padding: 14px 20px 12px 20px;
+
+    @include laptop {
+      width: 356px;
+    }
 
     &:after,
     &:before {
