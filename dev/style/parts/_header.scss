@@ -14,11 +14,19 @@
   &__left {
     float: left;
     width: 50%;
+
+    @include tablets {
+      width: 73.75%;
+    }
   }
 
   &__right {
     @extend .header__left;
     text-align: right;
+
+    @include tablets {
+      width: 26.25%;
+    }
   }
 }
 

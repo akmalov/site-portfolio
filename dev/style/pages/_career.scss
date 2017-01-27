@@ -7,6 +7,10 @@
   &__left {
     width: 31.42857142857143%;
     float: left;
+
+    @include tablets {
+      margin-bottom: 12px;
+    }
   }
 
   &__photo {
@@ -17,6 +21,11 @@
   &__image {
     width: $main-photo-width;
     height: $main-photo-height;
+
+    @include tablets {
+      width: 230px;
+      height: 230px;
+    }
   }
 
   &__right {
@@ -29,9 +38,21 @@
     }
   }
 
+  &__left, &__right {
+    @include tablets {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
   &__item {
     font-size: 18px;
     margin-bottom: 22px;
+
+    @include tablets {
+      margin-bottom: 20px;
+    }
 
     &:hover .career__block {
       background: $blue;
@@ -78,6 +99,11 @@
       width: 356px;
     }
 
+    @include tablets {
+      width: 91.66666666666667%;
+      padding: 15px 0 12px 24px;
+    }
+
     &:after,
     &:before {
       content: "";
@@ -86,6 +112,10 @@
       width: 1px;
       background: #dddddd;
       left: -22px;
+
+      @include tablets {
+        display: none;
+      }
     }
 
     &:before {
@@ -126,6 +156,10 @@
     margin-top: -8px;
     margin-right: 34px;
     color: $light-grey;
+
+    @include tablets {
+      display: none;
+    }
 
     &:after {
       content: "";

@@ -4,6 +4,10 @@
   margin-top: 18px;
   transition: color 0.5s;
 
+  @include tablets {
+    margin-bottom: 15px;
+  }
+
   &__link {
     cursor: pointer;
     font-size: 18px;
@@ -12,6 +16,16 @@
     font-weight: 700;
     color: $blue;
     background: url('../img/decor/contacts-underline.png') 0 bottom repeat-x;
+
+    @include tablets {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      white-space: nowrap;
+      text-indent: 9000px;
+      padding: 0;
+      background: url('../img/icons/contacts-phone.png') -5px -5px no-repeat;
+    }
   }
 
   &:hover {
@@ -19,6 +33,10 @@
     .contacts__link {
       background: url('../img/decor/contacts-underline-hovered.png') 0 bottom repeat-x;
       color: $red;
+
+      @include tablets {
+        background: url('../img/icons/contacts-phone.png') -47px -5px no-repeat;
+      }
     }
 
     .dropdown {
@@ -40,6 +58,10 @@
   z-index: 5;
   transition: all 0.3s;
 
+  @include tablets {
+    transform: translateX(-90%);
+  }
+
   &:before {
     content: '';
     position: absolute;
@@ -48,6 +70,10 @@
     height: 25px;
     top: -25px;
     background: transparent;
+
+    @include tablets {
+      right: 0;
+    }
   }
 
   &__list {
@@ -60,6 +86,10 @@
       top: -18px;
       border: 6px solid transparent;
       border-bottom: 12px solid #dedede;
+
+      @include tablets {
+        left: 90%;
+      }
     }
 
     &:after {

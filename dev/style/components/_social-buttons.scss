@@ -2,6 +2,10 @@
 
   padding-top: 10px;
 
+  @include tablets {
+    padding: 0;
+  }
+
   &__list {
     display: inline-block;
     font-size: 0;

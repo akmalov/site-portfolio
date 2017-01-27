@@ -70,15 +70,21 @@ body {
 }
 
 .wrapper {
-    min-height: 100%;
-    overflow: hidden;
-    position: relative;
-  }
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
 
 .wrapper:after {
   content: "";
   display: block;
   height: 50px;
+
+  @include tablets {
+    &:after {
+      height: 94px;
+    }
+  }
 }
 
 .container {
@@ -90,15 +96,10 @@ body {
   @include laptop {
     width: 728px;
   }
-}
 
-.footer {
-  height: 50px;
-  margin-top: -50px;
-  background: $dark-grey;
-  color: $light-grey;
-  position: relative;
-  font-size: 0;
+  @include tablets {
+    width: 480px;
+  }
 }
 
 ul {

@@ -1,18 +1,22 @@
 .portfolio {
 
-    .content-title {
-      margin-bottom: 16px;
+  .content-title {
+    margin-bottom: 16px;
 
-      @include laptop {
-        margin: -20px 0 15px 0;
-      }
+    @include laptop {
+      margin: -20px 0 15px 0;
     }
 
-    &__list {
-      margin-left: -15px;
+    @include tablets {
+      margin: -20px 0 18px 0;
     }
+  }
 
-    &__item {
+  &__list {
+    margin-left: -15px;
+  }
+
+  &__item {
     display: inline-block;
     vertical-align: top;
     width: 220px;
@@ -23,6 +27,10 @@
 
     @include laptop {
       width: 228px;
+    }
+
+    @include tablets {
+      margin: 0 0 20px 15px;
     }
 
     &:hover {
