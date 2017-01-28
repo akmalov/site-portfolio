@@ -5,7 +5,15 @@
   @include laptop {
     float: none;
     width: 100%;
-    margin: 0 0 38px 0;
+    margin-right: 38px;
+  }
+
+  @include tablets {
+    margin: 0 0 20px;
+  }
+
+  @include phones {
+    margin-bottom: 20px;
   }
 }
 
@@ -60,6 +68,12 @@
       border: 0 none;
     }
 
+    @include phones {
+      margin-right: 15px;
+      font-size: 14px;
+      line-height: 1.71;
+    }
+
     &:hover {
       color: $blue;
     }
@@ -74,5 +88,9 @@
   &__icon {
     display: inline-block;
     margin-right: 5px;
+
+    @include phones {
+      display: none;
+    }
   }
 }

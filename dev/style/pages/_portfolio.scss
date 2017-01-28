@@ -1,19 +1,28 @@
 .portfolio {
 
+  @include phones {
+    margin-bottom: 20px;
+  }
+
   .content-title {
     margin-bottom: 16px;
 
     @include laptop {
-      margin: -20px 0 15px 0;
+      margin-bottom: 15px;
     }
 
     @include tablets {
-      margin: -20px 0 18px 0;
+      margin-bottom: 18px;
     }
   }
 
   &__list {
     margin-left: -15px;
+
+    @include phones {
+      width: 300px;
+      margin: 0 auto;
+    }
   }
 
   &__item {
@@ -31,6 +40,11 @@
 
     @include tablets {
       margin: 0 0 20px 15px;
+    }
+
+    @include phones {
+      width: 300px;
+      margin: 0 0 20px;
     }
 
     &:hover {
@@ -58,6 +72,11 @@
       width: 228px;
       height: 178px;
     }
+
+    @include phones {
+      width: 300px;
+      height: 234px;
+    }
   }
 
   &__block {
@@ -77,6 +96,11 @@
       color: $blue;
       font-size: 21px;
       line-height: 1.14;
+
+      @include phones {
+        font-size: 24px;
+        line-height: 1.29;
+      }
     }
 
     &-text {
@@ -86,17 +110,27 @@
       margin-bottom: 10px;
       padding: 1px;
       font-weight: 300;
+
+      @include phones {
+        font-size: 16px;
+        line-height: 1.6875;
+      }
     }
 
     &-type {
       color: #aeaeae;
       font-size: 14px;
       font-weight: 700;
+
+      @include phones {
+        font-size: 16px;
+        line-height: 1.9375;
+      }
     }
 
     &-type .fa {
       display: inline-block;
-      margin: 0 2px 0 2px;
+      margin: 0 5px 0 2px;
       font-size: 18px;
     }
   }

@@ -11,6 +11,11 @@
     margin-top: -94px;
   }
 
+  @include phones {
+    height: 114px;
+    margin-top: -114px;
+  }
+
   .container {
     height: 100%;
   }
@@ -19,6 +24,11 @@
     font-size: 14px;
     line-height: 2.86;
     padding-top: 5px;
+
+    @include phones {
+      line-height: 1.5;
+      padding: 15px 10px;
+    }
   }
 
   &__right {

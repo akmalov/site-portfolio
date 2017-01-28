@@ -1,5 +1,13 @@
 .career {
 
+  @include tablets {
+    margin-bottom: 40px;
+  }
+
+  @include phones {
+    margin-top: -8px;
+  }
+
   .content-title {
     margin-bottom: 20px;
   }
@@ -10,6 +18,10 @@
 
     @include tablets {
       margin-bottom: 12px;
+    }
+
+    @include phones {
+      margin: -12px 0 12px 0;
     }
   }
 
@@ -25,6 +37,11 @@
     @include tablets {
       width: 230px;
       height: 230px;
+    }
+
+    @include phones {
+      width: 220px;
+      height: 220px;
     }
   }
 
@@ -104,6 +121,10 @@
       padding: 15px 0 12px 24px;
     }
 
+    @include phones {
+      width: 95%;
+    }
+
     &:after,
     &:before {
       content: "";
@@ -138,12 +159,22 @@
     line-height: 1.24;
     color: #5a5a5a;
     margin-bottom: 2px;
+
+    @include phones {
+      font-size: 18px;
+      line-height: 1.44;
+    }
   }
 
   &__work,
   &__date {
     font-size: 18px;
     font-weight: 300;
+
+    @include phones {
+      font-size: 16px;
+      line-height: 1.625;
+    }
   }
 
   &__year {
