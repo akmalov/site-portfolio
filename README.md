@@ -4,12 +4,12 @@ This site created at online educational courses "Web for beginners" at "Loftscho
 
 #Technologies stack
 
-1) HTML5 by Pug (ex-Jade);
-2) BEM-naming;
-3) CSS3 by SCSS;
-4) Font awesome;
-5) PNG sprite;
-6) Adaptive design up to (320 x 480).
+1. HTML5 by Pug (ex-Jade);
+2. BEM-naming;
+3. CSS3 by SCSS;
+4. Font awesome;
+5. PNG sprite;
+6. Adaptive design up to (320 x 480).
 
 #How to install this project
 
