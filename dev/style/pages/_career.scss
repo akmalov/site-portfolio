@@ -56,6 +56,7 @@
   }
 
   &__left, &__right {
+
     @include tablets {
       float: none;
       width: 100%;

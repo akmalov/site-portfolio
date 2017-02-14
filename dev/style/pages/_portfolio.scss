@@ -63,10 +63,26 @@
     text-decoration: none;
   }
 
-  &__photo-image {
+  &__photo {
     display: block;
     width: 220px;
     height: 172px;
+
+    &_mr-burger {
+      background: url("../img/content/mr.burger.jpg") center center / cover;
+    }
+
+    &_mountains-travel {
+      background: url("../img/content/mountains-travel.jpg") center center / cover;
+    }
+
+    &_panakeia {
+      background: url("../img/content/panakeia.jpg") center center / cover;
+    }
+
+    &_multipurpose {
+      background: url("../img/content/multipurpose.jpg") center center / cover;
+    }
 
     @include laptop {
       width: 228px;

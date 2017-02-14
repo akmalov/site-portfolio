@@ -159,10 +159,6 @@
     max-height: 90%;
     overflow: hidden;
 
-    @include laptop {
-      padding: 4px 14px;
-    }
-
     &:hover {
       background: $dirty-white;
       color: $blue;

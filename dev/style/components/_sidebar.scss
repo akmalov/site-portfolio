@@ -8,11 +8,7 @@
     margin-right: 38px;
   }
 
-  @include tablets {
-    margin: 0 0 20px;
-  }
-
-  @include phones {
+  @media (max-width: 1000px) {
     margin-bottom: 20px;
   }
 }

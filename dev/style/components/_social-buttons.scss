@@ -28,6 +28,7 @@
     height: 30px;
 
     &_fb {
+      display: none;
       background-position: -50px -50px;
 
       &:hover {
@@ -44,6 +45,7 @@
     }
 
     &_tw {
+      display: none;
       background-position: -312px -50px;
 
       &:hover {
