@@ -84,6 +84,10 @@
       background: url("../img/content/multipurpose.jpg") center center / cover;
     }
 
+    &_eclipse {
+      background: url("../img/content/eclipse.jpg") center center / cover;
+    }
+
     @include laptop {
       width: 228px;
       height: 178px;
