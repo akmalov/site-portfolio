@@ -67,25 +67,32 @@
     display: block;
     width: 220px;
     height: 172px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &_mr-burger {
-      background: url("../img/content/mr.burger.jpg") center center / cover;
+      background-image: url("../img/content/mr.burger.jpg");
     }
 
     &_mountains-travel {
-      background: url("../img/content/mountains-travel.jpg") center center / cover;
+      background-image: url("../img/content/mountains-travel.jpg");
     }
 
     &_panakeia {
-      background: url("../img/content/panakeia.jpg") center center / cover;
+      background-image: url("../img/content/panakeia.jpg");
     }
 
     &_multipurpose {
-      background: url("../img/content/multipurpose.jpg") center center / cover;
+      background-image: url("../img/content/multipurpose.jpg");
     }
 
     &_eclipse {
-      background: url("../img/content/eclipse.jpg") center center / cover;
+      background-image: url("../img/content/eclipse.jpg");
+    }
+
+    &_giftshop {
+      background-image: url("../img/content/giftshop.jpg");
     }
 
     @include laptop {
