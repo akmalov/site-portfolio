@@ -95,6 +95,10 @@
       background-image: url("../img/content/giftshop.jpg");
     }
 
+    &_bologna {
+      background-image: url("../img/content/bologna.jpg");
+    }
+
     @include laptop {
       width: 228px;
       height: 178px;
