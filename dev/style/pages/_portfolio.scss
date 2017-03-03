@@ -103,6 +103,10 @@
       background-image: url("../img/content/glow.jpg");
     }
 
+    &_shopia {
+      background-image: url("../img/content/shopia.jpg");
+    }
+
     @include laptop {
       width: 228px;
       height: 178px;
