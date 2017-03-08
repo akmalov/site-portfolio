@@ -107,6 +107,10 @@
       background-image: url("../img/content/shopia.jpg");
     }
 
+    &_velox {
+      background-image: url("../img/content/velox.jpg");
+    }
+
     @include laptop {
       width: 228px;
       height: 178px;
