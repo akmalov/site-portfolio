@@ -111,6 +111,10 @@
       background-image: url("../img/content/velox.jpg");
     }
 
+    &_foinni {
+      background-image: url("../img/content/foinni.jpg");
+    }
+
     @include laptop {
       width: 228px;
       height: 178px;
