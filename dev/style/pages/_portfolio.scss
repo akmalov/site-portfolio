@@ -115,6 +115,10 @@
       background-image: url("../img/content/foinni.jpg");
     }
 
+    &_maguwohost {
+      background-image: url("../img/content/maguwohost.jpg");
+    }
+
     @include laptop {
       width: 228px;
       height: 178px;
