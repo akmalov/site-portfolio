@@ -119,6 +119,10 @@
       background-image: url("../img/content/maguwohost.jpg");
     }
 
+    &_perfume {
+      background-image: url("../img/content/perfume.jpg");
+    }
+
     @include laptop {
       width: 228px;
       height: 178px;
